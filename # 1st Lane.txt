@@ -1,0 +1,21 @@
+ # 1st Lane
+
+         [2, {'path': [3, 8, 2]}],
+
+         [2, {'path': [4, 6, 0]}],
+         [3, {'path': [4, *road(NUM_OF_ROADS+1*n), 1]}],
+
+         [2, {'path': [5, *road(NUM_OF_ROADS), 0]}],
+         [2, {'path': [5, 7, 1]}],
+         [2, {'path': [5, *road(NUM_OF_ROADS+2*n), 2]}],
+
+    #   2nd Lane
+
+         [2, {'path': [12, 17, 11]}],
+
+         [3, {'path': [13, *road(NUM_OF_ROADS+4*n), 10]}],
+         [3, {'path': [13, 15, 9]}],
+
+         [3, {'path': [14, 16, 10]}],
+         [3, {'path': [14, *road(NUM_OF_ROADS+3*n), 9]}],
+         [3, {'path': [14, *road(NUM_OF_ROADS+5*n), 11]}],
