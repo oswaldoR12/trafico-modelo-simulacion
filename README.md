@@ -1,11 +1,12 @@
-# Traffic-Simulation
- 
-A traffic flow simulation using a microscopic model called Intelligent-Driver Model, implemented using Python with the Pygame module. The article for the explanation of the modelling process is described on my article:
-https://muddy-vulture-d01.notion.site/The-Modelling-of-Simpang-Empat-Pingit-Crossroad-a7f1a8adf0d44317aebff998149494b9?pvs=25
+# Simulación de tráfico
 
-# Todo
+Una simulación del flujo de tráfico utilizando un modelo microscópico llamado Intelligent-Driver Model, implementado usando Python con el módulo Pygame. El artículo para explicar el proceso de modelado se describe en el siguiente artículo: [The Modelling of Simpang Empat Pingit Crossroad](https://muddy-vulture-d01.notion.site/The-Modelling-of-Simpang-Empat-Pingit-Crossroad-a7f1a8adf0d44317aebff998149494b9?pvs=25)
 
-- Make the drivers more "random" and has a wider variety of driver behaviour.
-- Create a method for the drivers to change lanes.
-- Crash physics and better collision detection algorithm.
-- Include buttons to control simulation parameters from the program directly.
+## Todo
+
+- Hacer que los conductores sean más "aleatorios" y tengan una variedad más amplia de comportamiento del conductor.
+- Incluir una entrada para controlar el ratio de vehículos de la simulación.
+
+## Proyecto base
+
+El desarrollo base de este proyecto proviene del usuario "gigahidjrikaaa". Link: [Traffic-Simulation](https://github.com/gigahidjrikaaa/Traffic-Simulation).
