@@ -1,0 +1,46 @@
+% Parámetros del sistema
+lambda = 0.133; % tasa de llegadas (veh/s)
+mu = 0.144; % tasa de servicio (veh/s)
+servers = 1; % número de servidores
+total_time = 3600; % Tiempo total de simulación (s)
+
+% Cálculos
+n = lambda / (mu - lambda);
+Q = (lambda^2) / (mu * (mu - lambda));
+ts = 1 / (mu - lambda);
+tq = lambda / (mu * (mu - lambda));
+P = lambda / mu * 100;
+I = (1 - lambda / mu) * 100;
+
+% Imprimir resultados
+disp(['Probabilidad de tener exactamente n vehículos en el sistema: p(n) = ' num2str(probabilidad_n(1, lambda, mu))]);
+disp(['Número promedio de vehículos en el sistema (n) = ' num2str(n)]);
+disp(['Longitud promedio de la línea de espera (Q) = ' num2str(Q)]);
+disp(['Tiempo promedio gastado en el sistema (ts) = ' num2str(ts)]);
+disp(['Tiempo promedio de espera en la fila (tq) = ' num2str(tq)]);
+disp(['Porcentaje de utilización del servicio (P) = ' num2str(P) '%']);
+disp(['Porcentaje de encontrar el sistema inactivo (I) = ' num2str(I) '%']);
+disp(['Probabilidad de tener que gastar un tiempo t en el sistema: p(t) = ' num2str(probabilidad_t(1, lambda, mu))]);
+disp(['Probabilidad de tener que esperar un tiempo t o menos en el sistema: P(ts<= t) = ' num2str(probabilidad_ts(1, lambda, mu))]);
+disp(['Probabilidad de tener que esperar un tiempo t o menos en la fila: P(tq<= t) = ' num2str(probabilidad_tq(1, lambda, mu))]);
+
+
+
+% Definición de funciones
+function prob = probabilidad_n(n, lambda, mu)
+    prob = (lambda / mu)^n * (1 - lambda / mu);
+end
+
+function prob_t = probabilidad_t(t, lambda, mu)
+    prob_t = (mu - lambda) * exp((lambda - mu) * t);
+end
+
+function prob_ts = probabilidad_ts(t, lambda, mu)
+    prob_ts = 1 - exp(-(1 - lambda / mu) * mu * t);
+end
+
+function prob_tq = probabilidad_tq(t, lambda, mu)
+    prob_tq = 1 - (lambda / mu) * exp(-(1 - lambda / mu) * mu * t);
+end
+
+
