@@ -17,7 +17,7 @@ El desarrollo base de este proyecto proviene del usuario "gigahidjrikaaa". Link:
 1. **Clonar el repositorio:** Para comenzar, clone el repositorio del proyecto desde GitHub utilizando el siguiente comando en la terminal:
 
     ```
-    git clone https://github.com/ejemplo/proyecto.git
+    git clone https://github.com/oswaldoR12/trafico-modelo-simulacion.git
     ```
 
 2. **Acceder al directorio del proyecto:** Una vez clonado el repositorio, acceda al directorio del proyecto ejecutando el siguiente comando:
