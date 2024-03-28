@@ -32,7 +32,7 @@ El desarrollo base de este proyecto proviene del usuario "gigahidjrikaaa". Link:
     pip install -r requirements.txt
     ```
 
-## Ejecución
 
-Una vez instaladas todas las dependencias, puede ejecutar el archivo principal del proyecto, `main.py`, utilizando el siguiente comando:
+
+
 
