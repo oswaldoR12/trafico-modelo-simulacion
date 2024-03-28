@@ -10,3 +10,29 @@ Una simulación del flujo de tráfico utilizando un modelo microscópico llamado
 ## Proyecto base
 
 El desarrollo base de este proyecto proviene del usuario "gigahidjrikaaa". Link: [Traffic-Simulation](https://github.com/gigahidjrikaaa/Traffic-Simulation).
+
+
+## Instalación
+
+1. **Clonar el repositorio:** Para comenzar, clone el repositorio del proyecto desde GitHub utilizando el siguiente comando en la terminal:
+
+    ```
+    git clone https://github.com/ejemplo/proyecto.git
+    ```
+
+2. **Acceder al directorio del proyecto:** Una vez clonado el repositorio, acceda al directorio del proyecto ejecutando el siguiente comando:
+
+    ```
+    cd proyecto
+    ```
+
+3. **Instalar dependencias:** Asegúrese de tener Python y pip instalados en su sistema. Luego, instale las dependencias del proyecto desde el archivo `requirements.txt` utilizando el siguiente comando:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+## Ejecución
+
+Una vez instaladas todas las dependencias, puede ejecutar el archivo principal del proyecto, `main.py`, utilizando el siguiente comando:
+
