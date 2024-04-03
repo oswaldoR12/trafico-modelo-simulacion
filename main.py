@@ -4,7 +4,7 @@ from trafficSim import *
 sim = Simulation()
 
 # Play with these
-n = 1
+n = 20
 # 20
 a = -2
 b = 12
@@ -19,22 +19,22 @@ STEPS_PER_UPDATE = 10
 WEST_RIGHT_START = (-b-l, a)
 WEST_LEFT_START =	(-b-l, -a)
 
-SOUTH_RIGHT_START = (a+5, b+l)
+SOUTH_RIGHT_START = (a, b+l)
 
 EAST_RIGHT_START = (b+l, -a)
 EAST_LEFT_START = (b+l, a)
 
-NORTH_LEFT_START = (a+5, -b-l)
+NORTH_LEFT_START = (a, -b-l)
 
 WEST_RIGHT = (-b, a)
 WEST_LEFT =	(-b, -a)
 
-SOUTH_RIGHT = (a+5, b)
+SOUTH_RIGHT = (a, b)
 
 EAST_RIGHT = (b, -a)
 EAST_LEFT = (b, a)
 
-NORTH_LEFT = (a+5, -b)
+NORTH_LEFT = (a, -b)
 
 # Create Nodes with offset to avoid overlapping
 WEST_RIGHT_START2 = (WEST_RIGHT_START[0], WEST_RIGHT_START[1] - 4)
@@ -136,7 +136,7 @@ EAST_STRAIGHT3 = (WEST_LEFT3, EAST_RIGHT3)
 
 WEST_LEFT_TURN3 = turn_road(NORTH_LEFT3, WEST_RIGHT3, TURN_LEFT, n)
 
-SOUTH_RIGHT_TURN3 = turn_road(WEST_LEFT3, SOUTH_RIGHT3, TURN_RIGHT, n)
+SOUTH_RIGHT_TURN3 = turn_road(WEST_LEFT3, SOUTH_RIGHT3, TURN_LEFT, n)
 
 EAST_RIGHT_TURN3 = turn_road(NORTH_LEFT3, EAST_RIGHT3, TURN_RIGHT, n)
 
@@ -228,22 +228,22 @@ sim.create_gen({
 
     #   2nd Lane
 
-        #  [2, {'path': [12, 17, 11]}],
+         [2, {'path': [12, 17, 11]}],
 
-        #  [3, {'path': [13, *road(NUM_OF_ROADS+4*n), 10]}],
-        #  [3, {'path': [13, 15, 9]}],
+         [3, {'path': [13, *road(NUM_OF_ROADS+4*n), 10]}],
+         [3, {'path': [13, 15, 9]}],
 
-        #  [3, {'path': [14, 16, 10]}],
-        #  [3, {'path': [14, *road(NUM_OF_ROADS+3*n), 9]}],
+         [3, {'path': [14, 16, 10]}],
+         [3, {'path': [14, *road(NUM_OF_ROADS+3*n), 9]}],
 
 
     # 3rd Lane (no red light/turn left only)
 
-        # [3, {'path': [22, 24, 18]}],
+         [3, {'path': [22, 24, 18]}],
 
-        # [3, {'path': [23, *road(NUM_OF_ROADS+6*n), 18]}],
+         [3, {'path': [23, *road(NUM_OF_ROADS+6*n), 18]}],
 
-        # [3, {'path': [21, 34, 19]}]
+         [3, {'path': [21, 34, 19]}]
 
 
 
