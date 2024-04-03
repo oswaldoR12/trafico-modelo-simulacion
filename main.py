@@ -136,7 +136,7 @@ EAST_STRAIGHT3 = (WEST_LEFT3, EAST_RIGHT3)
 
 WEST_LEFT_TURN3 = turn_road(NORTH_LEFT3, WEST_RIGHT3, TURN_LEFT, n)
 
-SOUTH_RIGHT_TURN3 = turn_road(EAST_LEFT3, SOUTH_RIGHT3, TURN_RIGHT, n)
+SOUTH_RIGHT_TURN3 = turn_road(WEST_LEFT3, SOUTH_RIGHT3, TURN_RIGHT, n)
 
 EAST_RIGHT_TURN3 = turn_road(NORTH_LEFT3, EAST_RIGHT3, TURN_RIGHT, n)
 
@@ -199,7 +199,7 @@ sim.create_roads([
 
     *WEST_LEFT_TURN3,
 
-    *SOUTH_RIGHT_TURN3,
+    *SOUTH_RIGHT_TURN3, #ESTE!
 
     *EAST_RIGHT_TURN3,
 
@@ -218,32 +218,34 @@ sim.create_gen({
 
  # 1st Lane
 
-         [2, {'path': [3, 8, 2]}],
+          [2, {'path': [3, 8, 2]}],
 
-         [2, {'path': [4, 6, 0]}],
-         [3, {'path': [4, *road(NUM_OF_ROADS+1*n), 1]}],
+          [2, {'path': [4, 6, 0]}],
+          [3, {'path': [4, *road(NUM_OF_ROADS+1*n), 1]}],
 
-         [2, {'path': [5, *road(NUM_OF_ROADS), 0]}],
-         [2, {'path': [5, 7, 1]}],
-         [2, {'path': [5, *road(NUM_OF_ROADS+2*n), 2]}],
+          [2, {'path': [5, 7, 1]}],
+          [2, {'path': [5, *road(NUM_OF_ROADS+2*n), 2]}],
 
     #   2nd Lane
 
-         [2, {'path': [12, 17, 11]}],
+        #  [2, {'path': [12, 17, 11]}],
 
-         [3, {'path': [13, *road(NUM_OF_ROADS+4*n), 10]}],
-         [3, {'path': [13, 15, 9]}],
+        #  [3, {'path': [13, *road(NUM_OF_ROADS+4*n), 10]}],
+        #  [3, {'path': [13, 15, 9]}],
 
-         [3, {'path': [14, 16, 10]}],
-         [3, {'path': [14, *road(NUM_OF_ROADS+3*n), 9]}],
+        #  [3, {'path': [14, 16, 10]}],
+        #  [3, {'path': [14, *road(NUM_OF_ROADS+3*n), 9]}],
 
 
     # 3rd Lane (no red light/turn left only)
-    #    [3, {'path': [21, *road(NUM_OF_ROADS+9*n), 19]}],
 
-       [3, {'path': [22, 24, 18]}],
+        # [3, {'path': [22, 24, 18]}],
 
-       [3, {'path': [23, *road(NUM_OF_ROADS+6*n), 18]}],
+        # [3, {'path': [23, *road(NUM_OF_ROADS+6*n), 18]}],
+
+        # [3, {'path': [21, 34, 19]}]
+
+
 
     # [3, {'path': [28, *road(NUM_OF_ROADS+19*n), 25]}],
     # [4, {'path': [29, *road(NUM_OF_ROADS+21*n), 26]}],

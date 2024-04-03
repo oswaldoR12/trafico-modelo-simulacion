@@ -7,11 +7,6 @@ Una simulación del flujo de tráfico utilizando un modelo microscópico llamado
 - Hacer que los conductores sean más "aleatorios" y tengan una variedad más amplia de comportamiento del conductor.
 - Incluir una entrada para controlar el ratio de vehículos de la simulación.
 
-## Proyecto base
-
-El desarrollo base de este proyecto proviene del usuario "gigahidjrikaaa". Link: [Traffic-Simulation](https://github.com/gigahidjrikaaa/Traffic-Simulation).
-
-
 ## Instalación
 
 1. **Clonar el repositorio:** Para comenzar, clone el repositorio del proyecto desde GitHub utilizando el siguiente comando en la terminal:
