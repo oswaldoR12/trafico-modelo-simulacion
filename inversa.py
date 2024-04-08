@@ -273,13 +273,13 @@ sim.create_gen({
 'vehicles':[
    # 1st Lane
     [2, {'path': [6, 8, 0]}],
-    # [2, {'path': [5, *road(NUM_OF_ROADS), 0]}],
-    # [2, {'path': [7, 9, 1]}],
-    # [2, {'path': [6, *road(NUM_OF_ROADS+2*n), 1]}],
-    # [3, {'path': [4, 10, 2]}],
-    # [3, {'path': [7, *road(NUM_OF_ROADS+4*n), 2]}],
-    # [3, {'path': [5, 11, 3]}],
-    # [3, {'path': [4, *road(NUM_OF_ROADS+6*n), 3]}],
+    [2, {'path': [5, *road(NUM_OF_ROADS), 0]}],
+    [2, {'path': [7, 9, 1]}],
+    [2, {'path': [6, *road(NUM_OF_ROADS+2*n), 1]}],
+    [3, {'path': [4, 10, 2]}],
+    [3, {'path': [7, *road(NUM_OF_ROADS+4*n), 2]}],
+    [3, {'path': [5, 11, 3]}],
+    [3, {'path': [4, *road(NUM_OF_ROADS+6*n), 3]}],
 
     # # 2nd Lane
     # [2, {'path': [18, 20, 12]}],

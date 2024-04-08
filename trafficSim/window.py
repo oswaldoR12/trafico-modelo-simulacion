@@ -112,7 +112,13 @@ class Window:
                     elif event.key == pygame.K_BACKSPACE:
                         # El usuario presionó Retroceso, borrar el último carácter
                         self.vehicle_rate_input_text = self.vehicle_rate_input_text[:-1]
-                    else:
+                    elif event.key == pygame.K_SPACE:
+                        # El usuario presionó Espacio, activar/desactivar pausa en la simulación
+                        if self.sim.isPaused:
+                            self.sim.resume()  # Reanudar simulación
+                        else:
+                            self.sim.pause()   # Pausar simulación
+                    else:       
                         # Agregar caracteres ingresados al campo de entrada de texto
                         self.vehicle_rate_input_text += event.unicode
     def run(self, steps_per_update=1):
